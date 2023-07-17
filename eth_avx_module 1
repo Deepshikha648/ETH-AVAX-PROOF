@@ -1,27 +1,29 @@
+
+
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
-contract ErrorHandlingexam {
+contract detecterror {
    
     // uint public num = 0;
-    uint a=5;
+    uint u=5;
 
-    function average_marks(uint num) public pure{
-        assert(num!=0);
+    function average_marks(uint number) public pure{
+        assert(number!=0);
     }
 
-    function total_marks(uint _numerator, uint _denomenator) public pure returns (uint){
-        if(_numerator<_denomenator){
+    function total_marks(uint _a, uint _b) public pure returns (uint){
+        if(_a<_b){
            
-            revert("please provide numerator greater than denomenator");
+            revert("please provide a greater than b");
             
         }
-        return _numerator/_denomenator;
+        return _a/_b;
        
 
     }
-    function passing_marks(uint k) public view returns (uint){
-        require(k>0,"Value of a is zero , we don't want the result to be zero");
-        return k*a;
+    function passing_marks(uint l) public view returns (uint){
+        require(l>0,"Value of l is zero , we don't want the result to be zero");
+        return l*u;
 
     }
 
