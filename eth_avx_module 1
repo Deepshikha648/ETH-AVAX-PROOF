@@ -1,5 +1,4 @@
 
-
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 contract detecterror {
@@ -17,13 +16,13 @@ contract detecterror {
             revert("please provide a greater than b");
             
         }
-        return _a/_b;
+        return _a%_b;
        
 
     }
     function passing_marks(uint l) public view returns (uint){
         require(l>0,"Value of l is zero , we don't want the result to be zero");
-        return l*u;
+        return l+u;
 
     }
 
