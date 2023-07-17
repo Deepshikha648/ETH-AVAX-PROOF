@@ -24,5 +24,6 @@ The detecterror contract provides the following functions:
 + If the condition fails, it reverts the transaction with a custom error message.
 + If the condition is met, it returns the result .
   
-
+# walkthrough video
+https://www.loom.com/share/f6570e65014640da9b3ba9b7be31fe5d
 
